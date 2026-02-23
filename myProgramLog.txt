@@ -1,0 +1,15 @@
+ 2026-02-23 16:29:16,717 - INFO- Start of Program
+ 2026-02-23 16:29:21,907 - DEBUG- Validating path single_point.kml
+ 2026-02-23 16:29:27,944 - INFO- Gathering information from KML file...
+ 2026-02-23 16:29:27,944 - DEBUG- Processing Placemark: Ohio State University
+ 2026-02-23 16:29:27,944 - DEBUG- Geometry type for Placemark Ohio State University: Point
+ 2026-02-23 16:29:27,944 - DEBUG- Finding coordinates for Placemark: Ohio State University
+ 2026-02-23 16:29:27,944 - DEBUG- Processing coordinates: ['-83.0197', '40.0076', '0'] for Placemark: Ohio State University
+ 2026-02-23 16:29:27,944 - INFO- Finished gathering information from KML file. Creating DataFrame...
+ 2026-02-23 16:29:27,957 - DEBUG- Dataframe created: 
+          Placemark Name Geometry Type  Longitude  Latitude  Altitude
+0  Ohio State University         Point   -83.0197   40.0076       0.0
+
+ 2026-02-23 16:29:27,957 - INFO- Dataframe created. Summarizing information...
+ 2026-02-23 16:29:27,961 - INFO- Summary information created. Writing to TXT file...
+ 2026-02-23 16:29:27,965 - INFO- TXT file singlePointTest.txt written successfully

@@ -1,0 +1,50 @@
+---------------googleKML.kml Summary---------------
+
+Total Placemarks: 182
+
+     Placemark Name  Count
+           Absolute     16
+  Absolute Extruded     16
+        Building 40     22
+        Building 41     19
+        Building 42     24
+        Building 43     25
+ Extruded placemark      1
+ Floating placemark      1
+           Relative     20
+  Relative Extruded     20
+Roll over this icon      1
+   Simple placemark      1
+        Tessellated      2
+       The Pentagon     12
+      Untessellated      2
+
+Minimum Longitude: -122.0860162273783
+Maximum Longitude: -77.0531553685479
+Minimum Latitude: 36.07954952145647
+Maximum Latitude: 38.87291016281703
+
+Altitude Summary per Placemark:
+                        min     max       mean
+Placemark Name                                
+Absolute             1784.0  2357.0  2177.9375
+Absolute Extruded    1784.0  2357.0  2177.9375
+Building 40            17.0    17.0    17.0000
+Building 41            17.0    17.0    17.0000
+Building 42            25.0    25.0    25.0000
+Building 43            19.0    19.0    19.0000
+Extruded placemark     50.0    50.0    50.0000
+Floating placemark     50.0    50.0    50.0000
+Relative              100.0   645.0   399.7500
+Relative Extruded     100.0   630.0   391.5000
+Roll over this icon     0.0     0.0     0.0000
+Simple placemark        0.0     0.0     0.0000
+Tessellated             0.0     0.0     0.0000
+The Pentagon          100.0   100.0   100.0000
+Untessellated           0.0     0.0     0.0000
+
+Geometry Type Counts:
+Geometry Type  Count
+   LineString     48
+        Point      4
+      Polygon    130

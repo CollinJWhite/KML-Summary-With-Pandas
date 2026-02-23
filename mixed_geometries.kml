@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+
+    <Placemark>
+      <name>Observation Tower</name>
+      <Point>
+        <coordinates>-83.0150,40.0080,12</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>River Walk</name>
+      <LineString>
+        <coordinates>
+          -83.0300,40.0150,1
+          -83.0280,40.0130,2
+          -83.0250,40.0100,2
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Parking Lot</name>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -83.0220,40.0060,0
+              -83.0180,40.0060,0
+              -83.0180,40.0030,0
+              -83.0220,40.0030,0
+              -83.0220,40.0060,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+  </Document>
+</kml>

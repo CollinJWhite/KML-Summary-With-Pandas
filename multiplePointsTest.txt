@@ -1,0 +1,22 @@
+---------------multiple_points.kml Summary---------------
+
+Total Placemarks: 2
+
+Placemark Name  Count
+       Point A      1
+       Point B      1
+
+Minimum Longitude: -83.02
+Maximum Longitude: -83.01
+Minimum Latitude: 40.0
+Maximum Latitude: 40.01
+
+Altitude Summary per Placemark:
+                min  max  mean
+Placemark Name                
+Point A         0.0  0.0   0.0
+Point B         5.0  5.0   5.0
+
+Geometry Type Counts:
+Geometry Type  Count
+        Point      2

@@ -1,0 +1,26 @@
+---------------mixed_geometries.kml Summary---------------
+
+Total Placemarks: 9
+
+   Placemark Name  Count
+Observation Tower      1
+      Parking Lot      5
+       River Walk      3
+
+Minimum Longitude: -83.03
+Maximum Longitude: -83.015
+Minimum Latitude: 40.003
+Maximum Latitude: 40.015
+
+Altitude Summary per Placemark:
+                    min   max       mean
+Placemark Name                          
+Observation Tower  12.0  12.0  12.000000
+Parking Lot         0.0   0.0   0.000000
+River Walk          1.0   2.0   1.666667
+
+Geometry Type Counts:
+Geometry Type  Count
+   LineString      3
+        Point      1
+      Polygon      5

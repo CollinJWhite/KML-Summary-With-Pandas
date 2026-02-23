@@ -1,0 +1,20 @@
+---------------single_point.kml Summary---------------
+
+Total Placemarks: 1
+
+       Placemark Name  Count
+Ohio State University      1
+
+Minimum Longitude: -83.0197
+Maximum Longitude: -83.0197
+Minimum Latitude: 40.0076
+Maximum Latitude: 40.0076
+
+Altitude Summary per Placemark:
+                       min  max  mean
+Placemark Name                       
+Ohio State University  0.0  0.0   0.0
+
+Geometry Type Counts:
+Geometry Type  Count
+        Point      1
