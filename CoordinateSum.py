@@ -45,8 +45,19 @@ def get_geometry_type(placemark, ns):
 logging.info('Start of Program')
 
 directory = get_input_file()
+logging.debug(f'User provided KML file: {directory}')
 
 TXTName = input('Please enter the name of the TXT summary to be generated: ')
+
+logging.debug(f'Prompting for boundary limits...')
+limitBounds = input('Do you want to limit the boundaries of processed coordinates? (y/n): ')
+
+if limitBounds.lower().strip() == 'y':
+    logging.info(f'User chose to limit boundaries. Prompting for bounds...')
+    min_bound_lon = float(input('Enter minimum longitude: '))
+    max_bound_lon = float(input('Enter maximum longitude: '))
+    min_bound_lat = float(input('Enter minimum latitude: '))
+    max_bound_lat = float(input('Enter maximum latitude: '))
 
 tree = ET.parse(directory)
 
@@ -80,6 +91,10 @@ for placemark in tree.findall('.//kml:Placemark', ns):
             longitude = float(coords[0])
             latitude = float(coords[1])
             altitude = float(coords[2])
+            #dont include coordinates outside of the user defined bounds if they chose to limit boundaries
+            if(limitBounds.lower().strip() == 'y'):
+                if(longitude < min_bound_lon or longitude > max_bound_lon or latitude < min_bound_lat or latitude > max_bound_lat):
+                    continue
             dataframeList.append({
                 'Placemark Name': name,
                 'Geometry Type': geometryType,
@@ -113,6 +128,12 @@ with open(f'{TXTName}.txt', 'w') as file:
     file.write(f'---------------{os.path.basename(directory)} Summary---------------\n\n')
     file.write(f'Total Placemarks: {len(df)}\n\n')
     file.write(f'{placemarkCounts.to_string(index=False)}\n\n')
+    if(limitBounds.lower().strip() == 'y'):
+        file.write('Coordinates limited to the following bounds:\n')
+        file.write(f'Bound Minimum Longitude: "{min_bound_lon}"\n')
+        file.write(f'Bound Maximum Longitude: "{max_bound_lon}"\n')
+        file.write(f'Bound Minimum Latitude: "{min_bound_lat}"\n')
+        file.write(f'Bound Maximum Latitude: "{max_bound_lat}"\n')
     file.write(f'Minimum Longitude: {boundingBox["min_lon"]}\n')
     file.write(f'Maximum Longitude: {boundingBox["max_lon"]}\n')
     file.write(f'Minimum Latitude: {boundingBox["min_lat"]}\n')
